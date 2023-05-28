@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  overflow-x: hidden;
+}
+
+.section {
+  height: 100vh;
+}
+
+.hero-section {
+  position: relative;
+  padding: 2rem 11rem 0 11rem;
+  background-image: linear-gradient(315deg, #0d3861 20%, #0d324d 180%);
+}
+.hero-section .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9rem;
+}
+.hero-section .header .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.hero-section .header .nav-right .nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+.hero-section .header .nav-right .nav-ul li a:visited,
+.hero-section .header .nav-right .nav-ul li a:link,
+.hero-section .header .nav-right .nav-ul li a:active {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.hero-section .header .nav-right .logo {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+.hero-section .header .nav-right .logo img {
+  width: 100%;
+}
+.hero-section .header .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-section .header .nav-left .username .name {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.hero-section .header .nav-left .username .name:hover {
+  color: rgb(81, 172, 140);
+  transition: 0.4s all ease-in;
+}
+.hero-section .header .nav-left .mode-icon {
+  color: #fff;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.hero-section .texts {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .texts .animated-text {
+  color: #fff;
+  font-weight: 700;
+  transform: translate(0%, -50%);
+  padding: 0 10rem;
+  height: 4.2rem;
+  overflow: hidden;
+}
+.hero-section .texts .animated-text .line {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.8rem;
+  line-height: 5rem;
+}
+.hero-section .texts .animated-text .line:first-child {
+  animation: anim 12s infinite;
+}
+.hero-section .texts .sub-text {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.hero-section .texts .sub-text .icon-line {
+  transform: rotate(120deg);
+}
+
+.how-to-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.how-to-section .card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  width: 1170px;
+  height: 374px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: -10rem;
+}
+.how-to-section .card-wrapper .card {
+  padding: 3rem 4.5rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #333;
+}
+.how-to-section .card-wrapper .card .t1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.how-to-section .card-wrapper .card .t2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #00adbb;
+}
+.how-to-section .card-wrapper .card .t3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00adbb;
+}
+.how-to-section .steps {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: #e5ecf6;
+  height: 60%;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in;
+}
+.how-to-section .steps .step-top-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.how-to-section .steps .step-card-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.how-to-section .steps .step-card {
+  padding: 2rem;
+}
+.how-to-section .steps .step-card .step-icon {
+  transition: all 0.4s ease-in;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 3rem;
+  height: 7.4rem;
+  width: 7.4rem;
+  color: #00adbb;
+}
+.how-to-section .steps .step-card .step-text {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.gest-section {
+  background-color: #e5ecf6;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.gest-section .gest-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 65vw;
+}
+.gest-section .gest-wrapper .gest-title {
+  border-top: 9px solid #00adbb;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.gest-section .gest-wrapper .gest-btn {
+  border: 2px solid #00adbb;
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #00adbb;
+  font-weight: 700;
+}
+.gest-section .gest-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+.gest-section .gest-card-wrapper .gest-card {
+  border-radius: 10px;
+  padding: 2rem;
+  width: 20rem;
+  background-color: #fff;
+}
+.gest-section .gest-card-wrapper .gest-card .img-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.gest-section .gest-card-wrapper .gest-card .img-title .img-box {
+  width: 6rem;
+  height: 6rem;
+}
+.gest-section .gest-card-wrapper .gest-card .img-title .img-box img {
+  height: 100%;
+}
+.gest-section .gest-card-wrapper .gest-card .img-title p {
+  text-align: right;
+}
+.gest-section .gest-card-wrapper .gest-card .details {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  gap: 0.3rem;
+}
+.gest-section .gest-card-wrapper .gest-card .details .det-1,
+.gest-section .gest-card-wrapper .gest-card .details .det-2,
+.gest-section .gest-card-wrapper .gest-card .details .det-3 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #777;
+  gap: 0.5rem;
+}
+.gest-section .gest-card-wrapper .gest-card .gest-text {
+  padding-top: 1rem;
+  text-align: right;
+  color: #333;
+}
+.gest-section .gest-card-wrapper .gest-card .det-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.gest-section .gest-card-wrapper .gest-card .det-btn p {
+  color: #333;
+  font-weight: 700;
+}
+
+.footer {
+  height: 80vh;
+  background-color: #122a47;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer-wrapper {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-wrapper .sponsors {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 4rem;
+}
+.footer .footer-wrapper .sponsors .sp {
+  height: 3rem;
+  width: 3rem;
+}
+.footer .footer-wrapper .sponsors .sp img {
+  height: 100%;
+}
+.footer .footer-wrapper .footer-step {
+  color: #fff;
+}
+.footer .footer-wrapper .ctact-wrapper {
+  display: flex;
+  gap: 3rem;
+  color: #fff;
+  margin: 3rem 0;
+}
+.footer .footer-wrapper .ctact-wrapper .contact-left p {
+  text-align: left;
+}
+.footer .footer-wrapper .ctact-wrapper .contact-right p {
+  text-align: right;
+}
+.footer .footer-wrapper .copyRight {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+  16% {
+    margin-top: -60px;
+  }
+  33% {
+    margin-top: -120px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  66% {
+    margin-top: -120px;
+  }
+  82% {
+    margin-top: -60px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.custom-shape-divider-bottom-1685285723 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685285723 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 61px;
+}
+
+.custom-shape-divider-bottom-1685285723 .shape-fill {
+  fill: #ffffff;
+}/*# sourceMappingURL=styles.css.map */
