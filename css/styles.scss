@@ -311,6 +311,67 @@ body {
     }
   }
 }
+.plarforms-section {
+  padding: 2rem;
+
+  .p-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 3rem;
+    .p-nav-right {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      .nav-ul {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        a:visited,
+        a:link,
+        a:active {
+          text-decoration: none;
+          color: #333;
+          font-size: 1rem;
+          font-weight: 500;
+          padding-bottom: 0.4rem;
+          &:hover {
+            color: #00adbb;
+            border-bottom: 2px solid #00adbb;
+          }
+        }
+      }
+    }
+  }
+
+  .p-cards-wrapper {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .p-imgs {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 3rem;
+      .img-box {
+        height: 18rem;
+        width: 18rem;
+        border: 1px solid #888;
+        border-radius: 10px;
+
+        img {
+          height: 50%;
+          color: #0d324d;
+        }
+      }
+    }
+  }
+}
 
 // Footer
 .footer {

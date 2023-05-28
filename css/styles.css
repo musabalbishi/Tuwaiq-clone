@@ -279,6 +279,66 @@ body {
   font-weight: 700;
 }
 
+.plarforms-section {
+  padding: 2rem;
+}
+.plarforms-section .p-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plarforms-section .p-header .p-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.plarforms-section .p-header .p-nav-right .nav-ul {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+.plarforms-section .p-header .p-nav-right .nav-ul a:visited,
+.plarforms-section .p-header .p-nav-right .nav-ul a:link,
+.plarforms-section .p-header .p-nav-right .nav-ul a:active {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.4rem;
+}
+.plarforms-section .p-header .p-nav-right .nav-ul a:visited:hover,
+.plarforms-section .p-header .p-nav-right .nav-ul a:link:hover,
+.plarforms-section .p-header .p-nav-right .nav-ul a:active:hover {
+  color: #00adbb;
+  border-bottom: 2px solid #00adbb;
+}
+.plarforms-section .p-cards-wrapper {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plarforms-section .p-cards-wrapper .p-imgs {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.plarforms-section .p-cards-wrapper .p-imgs .img-box {
+  height: 18rem;
+  width: 18rem;
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+.plarforms-section .p-cards-wrapper .p-imgs .img-box img {
+  height: 50%;
+  color: #0d324d;
+}
+
 .footer {
   height: 80vh;
   background-color: #122a47;
